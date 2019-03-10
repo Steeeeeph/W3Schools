@@ -7,6 +7,10 @@
   display: none
 }
 
+.mySlides img {
+  width:100%
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -16,7 +20,6 @@
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
@@ -25,13 +28,11 @@
   color: white;
   font-weight: bold;
   font-size: 18px;
-  border-radius: 0 3px 3px 0;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 </style>
 </head>
@@ -40,15 +41,15 @@
 <div class="slideshow-container">
 
   <div class="mySlides">
-    <img src="img_nature_wide.jpg" style="width:100%">
+    <img src="img_nature_wide.jpg">
   </div>
 
   <div class="mySlides">
-    <img src="img_snow_wide.jpg" style="width:100%">
+    <img src="img_snow_wide.jpg">
   </div>
 
   <div class="mySlides">
-    <img src="img_mountains_wide.jpg" style="width:100%">
+    <img src="img_mountains_wide.jpg">
   </div>
 
   <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
